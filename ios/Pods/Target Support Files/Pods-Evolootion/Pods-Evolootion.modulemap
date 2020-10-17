@@ -1,0 +1,6 @@
+module Pods_Evolootion {
+  umbrella header "Pods-Evolootion-umbrella.h"
+
+  export *
+  module * { export * }
+}
