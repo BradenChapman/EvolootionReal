@@ -32,7 +32,7 @@ const App = () => {
             }
           }}
         />
-        {/* <Stack.Screen name="Exercises" component={ExerciseScreen} /> */}
+        <Stack.Screen name="Exercises" component={ExerciseScreen} />
         {/* <Stack.Screen name="Video" component={VideoScreen} /> */}
         <Stack.Screen name="Beginner Main" component={BeginnerMainScreen} />
         {/* <Stack.Screen name="Beginner Sheet Week 1" component={BSW1} /> */}

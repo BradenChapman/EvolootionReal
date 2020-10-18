@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import ExerciseScreenHeader from './ExerciseScreenHeader';
 import ExerciseListItem from './ExerciseListItem';
 import { ScrollView } from 'react-native-gesture-handler';
+import Header from './Header';
 
 const ExerciseScreen = ({navigation}) => {
     const[exercises, setExercises] = useState([
@@ -40,7 +41,7 @@ const ExerciseScreen = ({navigation}) => {
             <Header title='Exercise Page'/>
             <FlatList
                 style={styles.exerciseList}
-                data={[...favorites, ...exercises.sort((a,b) => a.text.localeCompare(b.text))]}
+                data={[...favorites.sort((a,b) => a.text.localeCompare(b.text)), ...exercises.sort((a,b) => a.text.localeCompare(b.text))]}
                 renderItem={({item}) => (
                     <ExerciseListItem item={item} makeFavorite={makeFavorite} removeFavorite={removeFavorite}/>
                 )}

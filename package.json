@@ -10,6 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-native-fontawesome": "^0.2.6",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.7.4",
     "@react-navigation/stack": "^5.9.1",
@@ -19,6 +22,7 @@
     "react-native-google-sheet": "0.0.5",
     "react-native-safe-area-context": "^3.1.8",
     "react-native-screens": "^2.11.0",
+    "react-native-vector-icons": "^7.1.0",
     "react-native-webview": "^10.9.1",
     "react-navigation-stack": "^2.8.2"
   },
