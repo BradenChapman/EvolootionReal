@@ -11,6 +11,7 @@ const HomeScreen = ({navigation}) => {
       source = {require('../assets/background_image.jpg')}
       style={styles.img}>
       <View style={styles.container}>
+        <View style={styles.emptyBox}></View>
         <View style={styles.mainBox}>
           <Text style={styles.text}>Evoolotion Strength and Conditioning</Text>
           <Text
@@ -37,7 +38,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainBox: {
-    marginTop: 475
+    flex: 1
+  },
+  emptyBox: {
+    flex: 1.7
   },
   text: {
     color: 'white',
