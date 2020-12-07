@@ -16,7 +16,7 @@ const HomeScreen = ({navigation}) => {
           <Text style={styles.text}>Evoolotion Strength and Conditioning</Text>
           <Text
            style={styles.mainMenuText}
-           onPress={() => navigation.navigate('MainMenu')}
+           onPress={() => navigation.navigate('Main Menu')}
            >Main Menu</Text>
         </View>
       </View>

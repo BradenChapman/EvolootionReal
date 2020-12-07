@@ -9,6 +9,7 @@ import HomeScreen from './components/HomeScreen';
 import BeginnerMainScreen from './components/Beginner/BeginnerMainScreen';
 import BSPW1 from './components/Beginner/BeginnerSheetPicker';
 import ExerciseScreen from './components/ExerciseScreen';
+import MainMenu from './components/MainMenu';
 
 
 const Stack = createStackNavigator();
@@ -27,7 +28,22 @@ const App = () => {
             },
             headerTitleStyle: {
               color: '#fff',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
+              fontSize: 20,
+            }
+          }}
+        />
+        <Stack.Screen
+          name="Main Menu"
+          component={MainMenu}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#111',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
             }
           }}
         />
