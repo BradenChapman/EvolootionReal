@@ -10,34 +10,17 @@ const HomeScreen = ({navigation}) => {
     <ImageBackground 
       source = {require('../assets/background_image.jpg')}
       style={styles.img}>
-        {/* <Button 
-            title="Go to details"
-            onPress={() => navigation.navigate('Details')}
-        /> */}
-        <View style={styles.container}> 
-            <View style={styles.mainBox}>
-                <View style={styles.leftBox}>
-                    <Text style={styles.headerText}>Set Programs</Text>
-                    <Text
-                     style={styles.text}
-                     onPress={() => navigation.navigate('Beginner Main')}>
-                     Beginner</Text>
-                    <Text style={styles.text}>Intermediate</Text>
-                    <Text style={styles.text}>Advanced</Text>
-                    <Text style={styles.text}>Athlete</Text>
-                </View>
-                <View style={styles.rightBox}>
-                    <Text style={styles.headerText}>Customizable Programs</Text>
-                    <Text style={styles.text}>Styles</Text>
-                    <Text
-                     style={styles.text}
-                     onPress={() => navigation.navigate('Exercises')}>
-                    Exercises</Text>
-                </View>
-            </View>
+      <View style={styles.container}>
+        <View style={styles.mainBox}>
+          <Text style={styles.text}>Evoolotion Strength and Conditioning</Text>
+          <Text
+           style={styles.mainMenuText}
+           onPress={() => navigation.navigate('MainMenu')}
+           >Main Menu</Text>
         </View>
-        
+      </View>
     </ImageBackground>
+      
 
   );
 }
@@ -53,40 +36,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  singleRow: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
   mainBox: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingTop: 100
-  },
-  leftBox: {
-    paddingLeft: 16,
-    alignItems: 'center',
-  },
-  rightBox: {
-    paddingRight: 16,
-    alignItems: 'center',
-  },
-  mainMenuText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    paddingBottom: 50
-  },
-  headerText: {
-    fontSize: 14,
-    fontWeight: 'bold'
+    marginTop: 475
   },
   text: {
-    fontSize: 13,
-    textDecorationLine: 'underline',
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 'bold'
+  },
+  mainMenuText: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 18,
     fontWeight: 'bold',
-    padding: 10
+    textDecorationLine: 'underline',
+    marginTop: 10
   }
 
-    
-})
+});
 
 export default HomeScreen;
