@@ -4,12 +4,8 @@ import {Text, View, StyleSheet, Image, ImageBackground, Button} from 'react-nati
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './components/HomeScreen';
-// import ExerciseScreen from './components/ExerciseScreen';
-// import VideoScreen from './components/VideoScreen';
-import BeginnerMainScreen from './components/Beginner/BeginnerMainScreen';
-import BSPW1 from './components/Beginner/BeginnerSheetPicker';
-import ExerciseScreen from './components/ExerciseScreen';
 import MainMenu from './components/MainMenu';
+import Tips from './components/Tips';
 
 
 const Stack = createStackNavigator();
@@ -24,7 +20,7 @@ const App = () => {
           component={HomeScreen}
           options = {{
             headerStyle: {
-              backgroundColor: '#888',
+              backgroundColor: '#000',
             },
             headerTitleStyle: {
               color: '#fff',
@@ -38,7 +34,7 @@ const App = () => {
           component={MainMenu}
           options = {{
             headerStyle: {
-              backgroundColor: '#111',
+              backgroundColor: '#000',
             },
             headerTitleStyle: {
               color: '#fff',
@@ -47,11 +43,21 @@ const App = () => {
             }
           }}
         />
-        <Stack.Screen name="Exercises" component={ExerciseScreen} />
-        {/* <Stack.Screen name="Video" component={VideoScreen} /> */}
-        <Stack.Screen name="Beginner Main" component={BeginnerMainScreen} />
-        {/* <Stack.Screen name="Beginner Sheet Week 1" component={BSW1} /> */}
-        <Stack.Screen name="Beginner Sheet Picker Week 1" component={BSPW1} />
+        <Stack.Screen
+          name="Tips"
+          component={Tips}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
+            }
+          }}
+        />
+
       </Stack.Navigator>
     </NavigationContainer>
    

@@ -5,7 +5,10 @@ const MainMenu = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <View style={styles.mainBox}>
-                <Text style={styles.text}>Tips</Text>
+                <Text 
+                style={styles.text}
+                onPress = {()=>navigation.navigate('Tips')}
+                >Tips</Text>
                 <Text style={styles.text}>Training Programs</Text>
                 <Text style={styles.text}>Exercise Menu</Text>
                 <Text style={styles.text}>Settings</Text>
