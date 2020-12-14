@@ -6,6 +6,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './components/HomeScreen';
 import MainMenu from './components/MainMenu';
 import Tips from './components/Tips';
+import TrainingPrograms from './components/TrainingPrograms';
+import ExerciseMenu from './components/ExerciseMenu';
+import Settings from './components/Settings';
 
 
 const Stack = createStackNavigator();
@@ -57,6 +60,48 @@ const App = () => {
             }
           }}
         />
+        <Stack.Screen
+          name="Training Programs"
+          component={TrainingPrograms}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
+            }
+          }}
+         />
+         <Stack.Screen
+          name="Exercise Menu"
+          component={ExerciseMenu}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
+            }
+          }}
+         />
+          <Stack.Screen
+          name="Settings"
+          component={Settings}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
+            }
+          }}
+         />
 
       </Stack.Navigator>
     </NavigationContainer>

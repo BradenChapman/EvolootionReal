@@ -1,6 +1,8 @@
 import React from 'react';
 import {Text, View, StyleSheet, FLatList, SafeAreaView, StatusBar} from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
+import BoldText from './BoldText';
+import BoldUnderlineText from './BoldUnderlineText';
 
 const DATA = [
     {
@@ -91,12 +93,15 @@ const styles = StyleSheet.create({
       flex: 0.05
     },
     bulletText: {
-      flex: 0.95
+      flex: 0.95,
+      fontSize: 20
     },
     boldText: {
         fontWeight: 'bold',
+        fontSize: 14
     },
     normalText: {
+        fontSize: 14
     },
   });
 
