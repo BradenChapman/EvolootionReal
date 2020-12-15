@@ -3,12 +3,12 @@ import { Text, View, TextInput, StyleSheet } from 'react-native';
 import BoldText from './BoldText';
 import BoldUnderlineText from './BoldUnderlineText';
 
-const TrainingPrograms = () => {
+const TrainingPrograms = ({ navigation }) => {
     return(
         <View style={ styles.container }>
             <View style={ styles.programBox }>
                 <Text style={ styles.headerText }>Beginner</Text>
-                <Text style={ styles.text }>Initial Strength and Core Conditioning Program</Text>
+                <Text style={ styles.text } onPress={()=>navigation.navigate('Week 1 Chest, Triceps, and Core')}>Initial Strength and Core Conditioning Program</Text>
             </View>
             <View style={ styles.programBox }>
                 <Text style={ styles.headerText }>Advanced</Text>

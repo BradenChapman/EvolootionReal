@@ -9,6 +9,8 @@ import Tips from './components/Tips';
 import TrainingPrograms from './components/TrainingPrograms';
 import ExerciseMenu from './components/ExerciseMenu';
 import Settings from './components/Settings';
+import ChestAndTriceps from './components/Workouts/ChestAndTriceps';
+import W1CTC from './components/Beginner/W1CTC';
 
 
 const Stack = createStackNavigator();
@@ -91,6 +93,34 @@ const App = () => {
           <Stack.Screen
           name="Settings"
           component={Settings}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
+            }
+          }}
+         />
+         <Stack.Screen
+          name="Chest and Triceps"
+          component={ChestAndTriceps}
+          options = {{
+            headerStyle: {
+              backgroundColor: '#000',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontWeight: 'bold',
+              fontSize: 20
+            }
+          }}
+         />
+         <Stack.Screen
+          name="Week 1 Chest, Triceps, and Core"
+          component={W1CTC}
           options = {{
             headerStyle: {
               backgroundColor: '#000',

@@ -15,8 +15,8 @@ const ExerciseOption = ({text, nextPage, navigation}) => {
 const ExerciseMenu = ({navigation}) => {
     return(
         <View style={ styles.container }>
-            <ExerciseOption text='Warm-Up' nextPage='Tips' navigation={navigation}/>
-            <ExerciseOption text='Chest and Triceps' nextPage='' navigation={navigation}/>
+            <ExerciseOption text='Warm-Up' nextPage='' navigation={navigation}/>
+            <ExerciseOption text='Chest and Triceps' nextPage='Chest and Triceps' navigation={navigation}/>
             <ExerciseOption text='Lower Body' nextPage='' navigation={navigation}/>
             <ExerciseOption text='Back, Shoulders, and Biceps' nextPage='' navigation={navigation}/>
             <ExerciseOption text='HIIT' nextPage='' navigation={navigation}/>
