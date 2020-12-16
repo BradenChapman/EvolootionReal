@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginLeft: 20,
+        marginBottom: 60,
         justifyContent: 'space-evenly'
     },
     text: {

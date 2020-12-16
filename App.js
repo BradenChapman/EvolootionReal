@@ -10,7 +10,9 @@ import TrainingPrograms from './components/TrainingPrograms';
 import ExerciseMenu from './components/ExerciseMenu';
 import Settings from './components/Settings';
 import ChestAndTriceps from './components/Workouts/ChestAndTriceps';
-import W1CTC from './components/Beginner/W1CTC';
+import BW1CTC from './components/Beginner/BW1CTC';
+import BW1LB from './components/Beginner/BW1LB';
+import ISACCMain from './components/Beginner/ISACCMain';
 
 
 const Stack = createStackNavigator();
@@ -19,118 +21,67 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home"
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#000',
+          },
+          headerTitleStyle: {
+            color: '#fff',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }
+        }}
+        >
         <Stack.Screen 
           name="Home" 
           component={HomeScreen}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20,
-            }
-          }}
+          options = {{ title: 'Home' }}
         />
         <Stack.Screen
           name="Main Menu"
           component={MainMenu}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          options = {{ title: 'Main Menu' }}
         />
         <Stack.Screen
           name="Tips"
           component={Tips}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          options = {{ title: 'Tips' }}
         />
         <Stack.Screen
           name="Training Programs"
           component={TrainingPrograms}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          options = {{ title: 'Training Programs' }}
          />
          <Stack.Screen
           name="Exercise Menu"
           component={ExerciseMenu}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          options = {{ title: 'Exercise Menu' }}
          />
-          <Stack.Screen
+        <Stack.Screen
           name="Settings"
           component={Settings}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          options = {{ title: 'Settings' }}
          />
          <Stack.Screen
           name="Chest and Triceps"
           component={ChestAndTriceps}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          options = {{ title: 'Chest and Triceps' }}
          />
          <Stack.Screen
-          name="Week 1 Chest, Triceps, and Core"
-          component={W1CTC}
-          options = {{
-            headerStyle: {
-              backgroundColor: '#000',
-            },
-            headerTitleStyle: {
-              color: '#fff',
-              fontWeight: 'bold',
-              fontSize: 20
-            }
-          }}
+          name="ISACC Home"
+          component={ISACCMain}
+          options = {{ title: 'ISACC Home' }}
+         />
+         <Stack.Screen
+          name="Beginner Week 1 Chest, Triceps, and Core"
+          component={BW1CTC}
+          options = {{ title: 'Chest, Triceps, and Core' }}
+         />
+         <Stack.Screen
+          name="Beginner Week 1 Lower Body"
+          component={BW1LB}
+          options = {{ title: 'Lower Body' }}
          />
 
       </Stack.Navigator>

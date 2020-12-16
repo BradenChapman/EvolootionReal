@@ -7,7 +7,9 @@ import { Text, View, StyleSheet } from 'react-native';
 2) Add props that allow user to pass the video page for the exercise
 */
 const Workout2Rows = ({ exName1, exSets1, exReps1, exLoad1, 
-        exName2, exSets2, exReps2, exLoad2, number, navigation}) => {
+        exName2, exSets2, exReps2, exLoad2,
+        exName3, exSets3, exReps3, exLoad3,
+        number, navigation }) => {
     return(
         <View style={ styles.set }>
             <View style={ styles.row }>
@@ -37,6 +39,21 @@ const Workout2Rows = ({ exName1, exSets1, exReps1, exLoad1,
                         <Text style={ styles.text }>Sets: { exSets2 }      </Text>
                         <Text style={ styles.text }>Reps: { exReps2 }      </Text>
                         <Text style={ styles.text }>Load: { exLoad2 }  </Text>
+                    </Text>
+                </View>
+            </View>
+            <View style={ styles.row }>
+                <View style={ styles.smallBox }>
+                    <Text style={ styles.text }></Text>
+                </View>
+                <View style={ styles.bigBox }>
+                    <Text>
+                        <Text style={ styles.underlineText }>{ exName3 }:</Text>
+                    </Text>
+                    <Text>
+                        <Text style={ styles.text }>Sets: { exSets3 }      </Text>
+                        <Text style={ styles.text }>Reps: { exReps3 }      </Text>
+                        <Text style={ styles.text }>Load: { exLoad3 }  </Text>
                     </Text>
                 </View>
             </View>

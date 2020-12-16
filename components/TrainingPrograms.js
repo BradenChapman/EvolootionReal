@@ -8,7 +8,7 @@ const TrainingPrograms = ({ navigation }) => {
         <View style={ styles.container }>
             <View style={ styles.programBox }>
                 <Text style={ styles.headerText }>Beginner</Text>
-                <Text style={ styles.text } onPress={()=>navigation.navigate('Week 1 Chest, Triceps, and Core')}>Initial Strength and Core Conditioning Program</Text>
+                <Text style={ styles.text } onPress={()=>navigation.navigate('ISACC Home')}>Initial Strength and Core Conditioning Program</Text>
             </View>
             <View style={ styles.programBox }>
                 <Text style={ styles.headerText }>Advanced</Text>

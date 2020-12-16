@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
         flex: 1
     },
     mainBox: {
-        marginLeft: 40,
-        marginTop: 40
+        marginLeft: 20,
+        marginTop: 20
     },
     text: {
         fontWeight: 'bold',
