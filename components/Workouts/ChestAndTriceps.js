@@ -4,7 +4,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import Exercise from '../Misc/Exercise';
 
 const DATA = [
-    { id:'Barbell Bench Press',              data: 'tbd' },
+    { id:'Barbell Bench Press',              data: 'CJWBq17pwHQ' },
     { id:'Barbell Incline Press',            data: 'tbd' },
     { id:'Bosu Ball Push-Ups',               data: 'tbd' },
     { id:'Cable Fly',                        data: 'tbd' },
@@ -43,7 +43,7 @@ const DATA = [
 
 const ChestAndTriceps = ({ navigation }) => {
     const renderItem = ({ item }) => (
-        <Exercise navigation={navigation} nextPage={'tbd'} text={item.id}></Exercise>
+        <Exercise navigation={navigation} nextPage={'Video'} text={item.id} ID={item.data}></Exercise>
     );
 
     return (

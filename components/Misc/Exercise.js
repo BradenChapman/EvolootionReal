@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-const Exercise = ({ navigation, nextPage, text}) => {
+const Exercise = ({ navigation, nextPage, text, ID}) => {
     return (
         <Text 
             style={ styles.text }
-            onPress = {() => navigation.navigate(nextPage)}
+            onPress = {() => navigation.navigate(nextPage, { videoID: ID })}
         >{ text }</Text>
     )
 };
