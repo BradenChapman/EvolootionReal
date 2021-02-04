@@ -13,6 +13,7 @@ import ChestAndTriceps from './components/Workouts/ChestAndTriceps';
 import BW1CTC from './components/Beginner/BW1CTC';
 import BW1LB from './components/Beginner/BW1LB';
 import ISACCMain from './components/Beginner/ISACCMain';
+import Video from './components/Video';
 
 
 const Stack = createStackNavigator();
@@ -82,6 +83,11 @@ const App = () => {
           name="Beginner Week 1 Lower Body"
           component={BW1LB}
           options = {{ title: 'Lower Body' }}
+         />
+         <Stack.Screen
+          name="Video"
+          component={Video}
+          options = {{ title: 'Exercise Video' }}
          />
 
       </Stack.Navigator>

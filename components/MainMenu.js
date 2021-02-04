@@ -23,6 +23,10 @@ const MainMenu = ({ navigation }) => {
                     style={styles.text}
                     onPress={()=> navigation.navigate('Settings')}
                 >Settings</Text>
+                <Text 
+                    style={styles.text}
+                    onPress={()=> navigation.navigate('Video', {videoID: 'CJWBq17pwHQ'})}
+                >Bench Press Video</Text>
             </View>
             
         </View>
