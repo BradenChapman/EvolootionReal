@@ -5,18 +5,8 @@ import YoutubePlayer from "react-native-youtube-iframe";
 export default function Video({ route, navigation }) {
   const { videoID } = route.params;
 
-  const [playing, setPlaying] = useState(false);
-
-  const onStateChange = useCallback((state) => {
-    if (state === "ended") {
-      setPlaying(false);
-      Alert.alert("video has finished playing!");
-    }
-  }, []);
-
-  const togglePlaying = useCallback(() => {
-    setPlaying((prev) => !prev);
-  }, []);
+  //TODO: Ask Brian if he wants the videos to auto play or not 
+  const [playing, setPlaying] = useState(true);
 
   return (
     <View>
@@ -24,7 +14,6 @@ export default function Video({ route, navigation }) {
         height={300}
         play={playing}
         videoId={videoID}
-        onChangeState={onStateChange}
       />
     </View>
   );
